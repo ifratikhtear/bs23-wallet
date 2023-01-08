@@ -33,7 +33,15 @@
               "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
-
+              "src/assets/js/vendor.min.js",
+              "src/assets/vendor/fullcalendar/main.min.js",
+              "src/assets/js/pages/demo.calendar.js",
+              "src/assets/js/app.min.js",
+              "src/assets/vendor/datatables.net/js/jquery.dataTables.min.js",
+              "src/assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js",
+              "src/assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js",
+              "src/assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js",
+              "src/assets/js/pages/demo.datatable-init.js"
             ]
           },
           "configurations": {
