@@ -1,4 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,19 +11,18 @@ export class LoadingService {
 
   private busyRequestCount = 0;
 
-  constructor() { }
+  constructor(private spinnerService: NgxSpinnerService) { }
 
-  busy(){
+  busy() : void {
     this.busyRequestCount++;
-    // this.spinnerService.show();
+    this.spinnerService.show();
   }
 
-  idle(){
+  idle() : void {
     this.busyRequestCount--;
-    if(this.busyRequestCount <= 0)
-    {
+    if (this.busyRequestCount <= 0) {
       this.busyRequestCount = 0;
-      // this.spinnerService.hide();
+      this.spinnerService.hide();
     }
   }
 }
