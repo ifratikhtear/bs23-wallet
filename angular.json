@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "finance-dream": {
+    "bs-wallet-admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/finance-dream",
+            "outputPath": "dist/bs-wallet-admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -81,10 +81,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "finance-dream:build:production"
+              "browserTarget": "bs-wallet-admin:build:production"
             },
             "development": {
-              "browserTarget": "finance-dream:build:development"
+              "browserTarget": "bs-wallet-admin:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,7 +92,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "finance-dream:build"
+            "browserTarget": "bs-wallet-admin:build"
           }
         },
         "test": {
