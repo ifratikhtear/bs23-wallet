@@ -4,7 +4,7 @@
 
 // authentication pages background
 body.authentication-bg {
-    background-image: $auth-bg-pattern-img;
+    background-image: url('/assets/images/bg-pattern-light.svg');
     background-size: cover;
     background-position: center;
     .account-pages {
@@ -33,7 +33,7 @@ body.auth-fluid-pages[data-sidenav-size="condensed"] {
     min-height: 100vh;
     flex-direction: row;
     align-items: stretch;
-    background: url("assets/images/bg-auth.jpg") center;
+    background: url("/assets/images/bg-auth.jpg") center;
     background-size: cover;
 
     .auth-fluid-form-box {
